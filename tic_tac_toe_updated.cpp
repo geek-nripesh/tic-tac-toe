@@ -8,24 +8,24 @@ using namespace std;
 
 #define N 3
 
-void createInitialBoard(char[N][N]);									//All
-void readUserMove(int *, int *, int *);									//Shreya
-void printCurrentBoard(char[N][N]);										//Nripesh
+void createInitialBoard(char[N][N]);							//All
+void readUserMove(int *, int *, int *);							//Shreya
+void printCurrentBoard(char[N][N]);							//Nripesh
 void computerPlaysRandom(char[N][N], int * , int *);					//Nripesh
 int computerPlaysToWin(char [N][N], int * , int * );					//Manpreet, Nripesh
-int getComputerMove(char board[N][N], int *, int *, int, int, char);	//Default
-int gameWon(char [N][N], char);											//Manpreet
-int isInputValid(int, int, int);										//Nripesh
-int isBoardFull(char board[N][N]);										//Nripesh
+int getComputerMove(char board[N][N], int *, int *, int, int, char);			//Default
+int gameWon(char [N][N], char);								//Manpreet
+int isInputValid(int, int, int);							//Nripesh
+int isBoardFull(char board[N][N]);							//Nripesh
 int computerPlaysToBlock(char [N][N], int * , int * );					//Manpreet, Nripesh
-void computerIsThinking();												//Nripesh
-void intro(string, string);															//Nripesh
-char gameDifficulty();													//Nripesh
-int opponent();															//Nripesh
-int wantRematch();														//Nripesh
+void computerIsThinking();								//Nripesh
+void intro(string, string);								//Nripesh
+char gameDifficulty();									//Nripesh
+int opponent();										//Nripesh
+int wantRematch();									//Manpreet
 void frontPage();
 												
-//void displayScore(int, int, string, string);							//Nripesh
+//void displayScore(int, int, string, string);						//Nripesh
 	
 using namespace std;
 
@@ -176,7 +176,7 @@ int main(){
 
 void frontPage(){
 	cout<<"\n*******************************************************************************\n";
-	cout<<"\n\n¦¦¦¦¦¦¦¦ ¦¦ ¦¦¦¦¦¦¦     ¦¦¦¦¦¦¦¦  ¦¦¦¦¦  ¦¦¦¦¦¦¦     ¦¦¦¦¦¦¦¦  ¦¦¦¦¦¦  ¦¦¦¦¦¦¦ \n   ¦¦    ¦¦ ¦¦             ¦¦    ¦¦   ¦¦ ¦¦             ¦¦    ¦¦    ¦¦ ¦¦      \n   ¦¦    ¦¦ ¦¦             ¦¦    ¦¦¦¦¦¦¦ ¦¦             ¦¦    ¦¦    ¦¦ ¦¦¦¦¦   \n   ¦¦    ¦¦ ¦¦             ¦¦    ¦¦   ¦¦ ¦¦             ¦¦    ¦¦    ¦¦ ¦¦      \n   ¦¦    ¦¦ ¦¦¦¦¦¦¦        ¦¦    ¦¦   ¦¦ ¦¦¦¦¦¦¦        ¦¦     ¦¦¦¦¦¦  ¦¦¦¦¦¦¦ \n                                                                           \n";
+	cout<<"\n\nÂ¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦ Â¦Â¦ Â¦Â¦Â¦Â¦Â¦Â¦Â¦     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦Â¦     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦Â¦ \n   Â¦Â¦    Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦   Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦    Â¦Â¦ Â¦Â¦      \n   Â¦Â¦    Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦Â¦Â¦Â¦Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦    Â¦Â¦ Â¦Â¦Â¦Â¦Â¦   \n   Â¦Â¦    Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦   Â¦Â¦ Â¦Â¦             Â¦Â¦    Â¦Â¦    Â¦Â¦ Â¦Â¦      \n   Â¦Â¦    Â¦Â¦ Â¦Â¦Â¦Â¦Â¦Â¦Â¦        Â¦Â¦    Â¦Â¦   Â¦Â¦ Â¦Â¦Â¦Â¦Â¦Â¦Â¦        Â¦Â¦     Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦Â¦ \n                                                                           \n";
 	cout<<"\n*******************************************************************************\n";
 	cout<<"\n++++++++++++++++++++++++++++\tTEAM MEMBERS\t++++++++++++++++++++++++++++++++\n";
 	cout<<"\n\n\t\t--> MANPREET SINGH [Group Leader] : 20BCS6444"<<endl;
